@@ -1,0 +1,131 @@
+.conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h2{
+        font-size: 4rem;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: var(--primary-color);
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+}
+.Cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 6rem;
+}
+.Card{
+    display: flex;
+    width: 30rem;
+    height: 40rem;
+    margin-right: 31px;
+    margin-bottom: 3rem;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.1);
+    align-items: center;
+    p{
+        color: var(--paragraph-2);
+        font-size: 1.4rem;
+        margin-top: 3rem;
+        width: 80%;
+        font-family: ssystem-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+    h3{
+        color: var(--paragraph);
+        font-size: 2.5rem;
+        font-weight: 500;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+.Card img{
+    border-radius: 6px;
+    width: 25rem;
+    height: 15rem;
+}
+/* Responsivo para tablets */
+@media (max-width: 768px) {
+    .Cards {
+        width: 90%;
+        flex-wrap: wrap;
+        gap: 20px; /* Adiciona espaço entre as cards */
+    }
+
+    .Card {
+        width: calc(50% - 20px); /* Dois cards por linha, com espaçamento */
+        height: 35rem;
+    }
+
+    .Card img {
+        width: 22rem;
+        height: 13rem;
+    }
+
+    .conteiner {
+        padding: 2rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .Card h3 {
+        font-size: 2rem;
+    }
+
+    .Card p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Responsivo para dispositivos móveis */
+@media (max-width: 480px) {
+    .Cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centraliza os cards */
+        gap: 20px; /* Adiciona espaçamento entre os cards */
+        a {
+            margin-left: 4rem;
+        }
+    }
+
+    .Card {
+        width: 90%; /* Ajuste para garantir que os cards não fiquem muito grandes */
+        height: auto;
+        margin-right: 0;
+    }
+
+    .Card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .conteiner {
+        padding: 1rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .Card h3 {
+        font-size: 1.8rem;
+    }
+
+    .Card p {
+        font-size: 1rem;
+    }
+}

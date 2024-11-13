@@ -1,0 +1,30 @@
+:root {
+    --hue: 90;
+    --primary-color: hsla(171, 95%, 54%, 0.6);
+    --primary-hover: hsla(171, 95%, 54%, 0.6);
+    --secundary-color: hsl(0, 0%, 5%);
+    --third-color: hsla(0, 0%, 100%, 0.089);
+    --bg-color: hsl(0, 0%, 9%);
+    --bg-color2: hsl(0, 0%, 12%);
+  
+    --headline: hsl(0, 0%, 100%);
+    --paragraph: hsla(0, 0%, 100%, 0.658);
+    --paragraph-2: hsl(0, 2%, 42%);
+  
+    font-size: 62.5%;
+
+    --nav-height: 7.2rem;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    font-size: 1.6rem;
+    text-align: center;
+    overflow: overlay;
+    background-color: var(--bg-color);
+  }
